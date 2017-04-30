@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NavigationController.h
 //  Woahdude
 //
 //  Created by Tawa Nicolas on 29/4/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NavigationController : UINavigationController
 
 @end
-
