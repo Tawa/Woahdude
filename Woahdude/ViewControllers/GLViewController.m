@@ -7,29 +7,14 @@
 //
 
 #import "GLViewController.h"
-#import "GameScene.h"
+#import "BaseShader.h"
 
-@implementation SKScene (Unarchive)
-
-+(instancetype)unarchiveFromFile:(NSString *)file
+@interface GLViewController () <GLKViewControllerDelegate>
 {
-	NSString *nodePath = [[NSBundle mainBundle] pathForResource:file ofType:@"sks"];
-	
-	NSData *data = [NSData dataWithContentsOfFile:nodePath options:NSDataReadingMappedIfSafe error:nil];
-	
-	NSKeyedUnarchiver *arch = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
-	[arch setClass:self forClassName:@"SKScene"];
-	SKScene *scene = [arch decodeObjectForKey:NSKeyedArchiveRootObjectKey];
-	[arch finishDecoding];
-	
-	return scene;
+	NSTimeInterval time;
 }
 
-@end
-
-@interface GLViewController ()
-
-@property (strong, nonatomic) GameScene *scene;
+@property (strong, nonatomic) BaseShader *shader;
 
 @end
 
@@ -39,21 +24,32 @@
 {
 	[super viewDidLoad];
 	
-	SKView *skView = (SKView *)self.view;
-	skView.showsFPS = YES;
-	skView.showsNodeCount = YES;
+	GLKView *glView = (GLKView *)self.view;
+	glView.context = [BaseShader context];
 	
-	self.scene = [GameScene unarchiveFromFile:@"GameScene"];
-	self.scene.scaleMode = SKSceneScaleModeFill;
+	glClearColor(0, 0, 0, 1);
 	
+	self.delegate = self;
+	self.timeScale = 1;
+	time = 0;
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
-	SKView *skView = (SKView *)self.view;
-	self.scene.fileName = self.fileName;
-	[skView presentScene:self.scene];
+	
+	self.shader = [[BaseShader alloc] initWithVertexShader:@"BaseVertex" fragmentShader:self.fileName];
+}
+
+-(void)glkView:(GLKView *)view drawInRect:(CGRect)rect
+{
+	glClear(GL_COLOR_BUFFER_BIT);
+	[self.shader renderInRect:rect atTime:time];
+}
+
+-(void)glkViewControllerUpdate:(GLKViewController *)controller
+{
+	time += controller.timeSinceLastUpdate * _timeScale;
 }
 
 -(void)setRed:(CGFloat)red
@@ -76,7 +72,29 @@
 
 -(void)updateBackground
 {
-	self.scene.colorUniform.vectorFloat4Value = vector4((float)self.red, (float)self.green, (float)self.blue, 1.f);
+	[self.shader r:_red g:_green b:_blue];
 }
 
+-(void)handleTouch:(UITouch *)touch
+{
+	CGPoint point = [touch locationInView:self.view];
+//	CGFloat mouseX = -4*(point.x-self.view.frame.size.width*0.5);
+//	CGFloat mouseY = 4*(point.y-self.view.frame.size.height*0.5);
+	
+	CGFloat mouseX = point.x/[UIScreen mainScreen].bounds.size.width;
+	CGFloat mouseY = 1-point.y/[UIScreen mainScreen].bounds.size.height;
+	
+	[self.shader x:mouseX y:mouseY];
+//	[self.shader x:point.x y:point.y];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+	[self handleTouch:[touches anyObject]];
+}
+
+-(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+	[self handleTouch:[touches anyObject]];
+}
 @end

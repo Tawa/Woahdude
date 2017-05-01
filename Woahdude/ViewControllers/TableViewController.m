@@ -25,6 +25,27 @@
 	data = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"fsh" subdirectory:nil];
 }
 
+-(void)pause:(BOOL)pause
+{
+	for (TableViewCell *cell in self.tableView.visibleCells) {
+		[cell.displayLink setPaused:pause];
+	}
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	
+	[self pause:NO];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+	[super viewWillDisappear:animated];
+
+	[self pause:YES];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -40,7 +61,7 @@
 	NSURL *url = [data objectAtIndex:indexPath.row];
 	NSString *fileName = [[url lastPathComponent] stringByDeletingPathExtension];
 
-	cell.title.text = fileName;
+	[cell setData:fileName];
     return cell;
 }
 

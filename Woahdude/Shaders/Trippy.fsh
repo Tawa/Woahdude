@@ -1,14 +1,21 @@
+#ifdef GL_ES
+precision mediump float;
+#endif
 
-void main( void ) {
-	
+uniform highp float time;
+uniform lowp vec4 color;
+uniform lowp vec2 mouse;
+uniform lowp vec2 resolution;
+
+void main(void){
 	vec2 p = ( gl_FragCoord.xy - 0.5 / resolution.xy ) / resolution.y;
 	
-	p.x += 0.1 * sin(p.y * 3.14 + u_time);
+	p.x += 0.1 * sin(p.y * 3.14 + time);
 	p.x = sin(p.x * 5.0);
 	p.y = sin(p.y * 5.0);
 	
 	//	float g = distance(vec2(0.0,0.0), p);
-	float g = distance(vec2(sin(u_time*0.1)), p);
+	float g = distance(vec2(sin(time*0.1)), p);
 	float d = sin(g * 3.14 * 5.0);
 	
 	vec3 ca = vec3(1.0, 0.0, 0.0);

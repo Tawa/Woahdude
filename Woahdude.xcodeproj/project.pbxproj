@@ -13,15 +13,25 @@
 		3821CC9F1EB52443003589B6 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CC9E1EB52443003589B6 /* TableViewCell.m */; };
 		3821CCA21EB52D35003589B6 /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CCA11EB52D35003589B6 /* GLViewController.m */; };
 		3821CCA61EB54FBE003589B6 /* blob.png in Resources */ = {isa = PBXBuildFile; fileRef = 3821CCA51EB54FBE003589B6 /* blob.png */; };
-		3821CCF01EB641E0003589B6 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CCEF1EB641E0003589B6 /* GameScene.m */; };
-		3821CCF21EB6438A003589B6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3821CCF11EB6438A003589B6 /* GameScene.sks */; };
-		3821CCF51EB6453D003589B6 /* ColorfulCircle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3821CCF41EB6453D003589B6 /* ColorfulCircle.fsh */; };
+		3821CCF51EB6453D003589B6 /* CircleWithStars.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3821CCF41EB6453D003589B6 /* CircleWithStars.fsh */; };
+		38415A971EB76B71007B8C7B /* Planet.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38415A961EB76B71007B8C7B /* Planet.fsh */; };
+		38415A991EB76CEA007B8C7B /* Circles2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38415A981EB76CEA007B8C7B /* Circles2.fsh */; };
+		38415A9B1EB77043007B8C7B /* Lines.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38415A9A1EB77043007B8C7B /* Lines.fsh */; };
 		387BFDB41EB6985C008EB2B6 /* ExpandingCircle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDB31EB6985C008EB2B6 /* ExpandingCircle.fsh */; };
 		387BFDB61EB6991D008EB2B6 /* SpinningParticles.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDB51EB6991D008EB2B6 /* SpinningParticles.fsh */; };
 		387BFDB81EB69A54008EB2B6 /* CurvedLine.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDB71EB69A54008EB2B6 /* CurvedLine.fsh */; };
 		387BFDBA1EB69C58008EB2B6 /* Trippy.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDB91EB69C58008EB2B6 /* Trippy.fsh */; };
 		387BFDBC1EB69D06008EB2B6 /* SpinningLines.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDBB1EB69D06008EB2B6 /* SpinningLines.fsh */; };
-		387BFDBE1EB69FF9008EB2B6 /* WaterColors.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDBD1EB69FF9008EB2B6 /* WaterColors.fsh */; };
+		387BFDBE1EB69FF9008EB2B6 /* Cube.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDBD1EB69FF9008EB2B6 /* Cube.fsh */; };
+		387BFDC51EB71F56008EB2B6 /* BaseShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 387BFDC41EB71F56008EB2B6 /* BaseShader.m */; };
+		387BFDC71EB72467008EB2B6 /* BaseVertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDC61EB72467008EB2B6 /* BaseVertex.vsh */; };
+		387BFDC91EB7251B008EB2B6 /* Galaxy.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDC81EB7251B008EB2B6 /* Galaxy.fsh */; };
+		387BFDCD1EB74E73008EB2B6 /* BlurredLines.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDCC1EB74E73008EB2B6 /* BlurredLines.fsh */; };
+		387BFDCF1EB75DB3008EB2B6 /* EyesTunnel.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDCE1EB75DB3008EB2B6 /* EyesTunnel.fsh */; };
+		387BFDD11EB75EEC008EB2B6 /* Blobs.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDD01EB75EEC008EB2B6 /* Blobs.fsh */; };
+		387BFDD31EB75FDC008EB2B6 /* Waves.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDD21EB75FDC008EB2B6 /* Waves.fsh */; };
+		387BFDD51EB76049008EB2B6 /* Shapes.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDD41EB76049008EB2B6 /* Shapes.fsh */; };
+		387BFDD71EB76125008EB2B6 /* Circles.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDD61EB76125008EB2B6 /* Circles.fsh */; };
 		38B4CE4D1EB5198100E9DEF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CE4C1EB5198100E9DEF8 /* main.m */; };
 		38B4CE501EB5198100E9DEF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CE4F1EB5198100E9DEF8 /* AppDelegate.m */; };
 		38B4CE561EB5198100E9DEF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CE541EB5198100E9DEF8 /* Main.storyboard */; };
@@ -40,18 +50,27 @@
 		3821CC9E1EB52443003589B6 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = Views/TableViewCell.m; sourceTree = "<group>"; };
 		3821CCA01EB52D35003589B6 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLViewController.h; path = ViewControllers/GLViewController.h; sourceTree = "<group>"; };
 		3821CCA11EB52D35003589B6 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLViewController.m; path = ViewControllers/GLViewController.m; sourceTree = "<group>"; };
-		3821CCA41EB5330D003589B6 /* Background.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Background.h; path = Elements/Background.h; sourceTree = "<group>"; };
 		3821CCA51EB54FBE003589B6 /* blob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blob.png; sourceTree = "<group>"; };
-		3821CCEE1EB641E0003589B6 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Views/GameScene.h; sourceTree = "<group>"; };
-		3821CCEF1EB641E0003589B6 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = Views/GameScene.m; sourceTree = "<group>"; };
-		3821CCF11EB6438A003589B6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = Views/GameScene.sks; sourceTree = "<group>"; };
-		3821CCF41EB6453D003589B6 /* ColorfulCircle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ColorfulCircle.fsh; path = Shaders/ColorfulCircle.fsh; sourceTree = "<group>"; };
+		3821CCF41EB6453D003589B6 /* CircleWithStars.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = CircleWithStars.fsh; path = Shaders/CircleWithStars.fsh; sourceTree = "<group>"; };
+		38415A961EB76B71007B8C7B /* Planet.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Planet.fsh; path = Shaders/Planet.fsh; sourceTree = "<group>"; };
+		38415A981EB76CEA007B8C7B /* Circles2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Circles2.fsh; path = Shaders/Circles2.fsh; sourceTree = "<group>"; };
+		38415A9A1EB77043007B8C7B /* Lines.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Lines.fsh; path = Shaders/Lines.fsh; sourceTree = "<group>"; };
 		387BFDB31EB6985C008EB2B6 /* ExpandingCircle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ExpandingCircle.fsh; path = Shaders/ExpandingCircle.fsh; sourceTree = "<group>"; };
 		387BFDB51EB6991D008EB2B6 /* SpinningParticles.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SpinningParticles.fsh; path = Shaders/SpinningParticles.fsh; sourceTree = "<group>"; };
 		387BFDB71EB69A54008EB2B6 /* CurvedLine.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = CurvedLine.fsh; path = Shaders/CurvedLine.fsh; sourceTree = "<group>"; };
 		387BFDB91EB69C58008EB2B6 /* Trippy.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Trippy.fsh; path = Shaders/Trippy.fsh; sourceTree = "<group>"; };
 		387BFDBB1EB69D06008EB2B6 /* SpinningLines.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SpinningLines.fsh; path = Shaders/SpinningLines.fsh; sourceTree = "<group>"; };
-		387BFDBD1EB69FF9008EB2B6 /* WaterColors.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WaterColors.fsh; path = Shaders/WaterColors.fsh; sourceTree = "<group>"; };
+		387BFDBD1EB69FF9008EB2B6 /* Cube.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Cube.fsh; path = Shaders/Cube.fsh; sourceTree = "<group>"; };
+		387BFDC31EB71F56008EB2B6 /* BaseShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseShader.h; path = Elements/BaseShader.h; sourceTree = "<group>"; };
+		387BFDC41EB71F56008EB2B6 /* BaseShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseShader.m; path = Elements/BaseShader.m; sourceTree = "<group>"; };
+		387BFDC61EB72467008EB2B6 /* BaseVertex.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = BaseVertex.vsh; path = Shaders/BaseVertex.vsh; sourceTree = "<group>"; };
+		387BFDC81EB7251B008EB2B6 /* Galaxy.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Galaxy.fsh; path = Shaders/Galaxy.fsh; sourceTree = "<group>"; };
+		387BFDCC1EB74E73008EB2B6 /* BlurredLines.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = BlurredLines.fsh; path = Shaders/BlurredLines.fsh; sourceTree = "<group>"; };
+		387BFDCE1EB75DB3008EB2B6 /* EyesTunnel.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = EyesTunnel.fsh; path = Shaders/EyesTunnel.fsh; sourceTree = "<group>"; };
+		387BFDD01EB75EEC008EB2B6 /* Blobs.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Blobs.fsh; path = Shaders/Blobs.fsh; sourceTree = "<group>"; };
+		387BFDD21EB75FDC008EB2B6 /* Waves.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Waves.fsh; path = Shaders/Waves.fsh; sourceTree = "<group>"; };
+		387BFDD41EB76049008EB2B6 /* Shapes.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shapes.fsh; path = Shaders/Shapes.fsh; sourceTree = "<group>"; };
+		387BFDD61EB76125008EB2B6 /* Circles.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Circles.fsh; path = Shaders/Circles.fsh; sourceTree = "<group>"; };
 		38B4CE481EB5198100E9DEF8 /* Woahdude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woahdude.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B4CE4C1EB5198100E9DEF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38B4CE4E1EB5198100E9DEF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,9 +97,6 @@
 			children = (
 				3821CC9D1EB52443003589B6 /* TableViewCell.h */,
 				3821CC9E1EB52443003589B6 /* TableViewCell.m */,
-				3821CCEE1EB641E0003589B6 /* GameScene.h */,
-				3821CCEF1EB641E0003589B6 /* GameScene.m */,
-				3821CCF11EB6438A003589B6 /* GameScene.sks */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -88,7 +104,8 @@
 		3821CCA31EB532EE003589B6 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				3821CCA41EB5330D003589B6 /* Background.h */,
+				387BFDC31EB71F56008EB2B6 /* BaseShader.h */,
+				387BFDC41EB71F56008EB2B6 /* BaseShader.m */,
 			);
 			name = Elements;
 			sourceTree = "<group>";
@@ -96,13 +113,24 @@
 		3821CCF31EB64529003589B6 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				3821CCF41EB6453D003589B6 /* ColorfulCircle.fsh */,
+				387BFDC61EB72467008EB2B6 /* BaseVertex.vsh */,
+				387BFDD01EB75EEC008EB2B6 /* Blobs.fsh */,
+				387BFDCC1EB74E73008EB2B6 /* BlurredLines.fsh */,
+				3821CCF41EB6453D003589B6 /* CircleWithStars.fsh */,
+				387BFDBD1EB69FF9008EB2B6 /* Cube.fsh */,
 				387BFDB71EB69A54008EB2B6 /* CurvedLine.fsh */,
 				387BFDB31EB6985C008EB2B6 /* ExpandingCircle.fsh */,
+				387BFDCE1EB75DB3008EB2B6 /* EyesTunnel.fsh */,
+				387BFDC81EB7251B008EB2B6 /* Galaxy.fsh */,
 				387BFDBB1EB69D06008EB2B6 /* SpinningLines.fsh */,
 				387BFDB51EB6991D008EB2B6 /* SpinningParticles.fsh */,
 				387BFDB91EB69C58008EB2B6 /* Trippy.fsh */,
-				387BFDBD1EB69FF9008EB2B6 /* WaterColors.fsh */,
+				387BFDD21EB75FDC008EB2B6 /* Waves.fsh */,
+				387BFDD41EB76049008EB2B6 /* Shapes.fsh */,
+				387BFDD61EB76125008EB2B6 /* Circles.fsh */,
+				38415A961EB76B71007B8C7B /* Planet.fsh */,
+				38415A981EB76CEA007B8C7B /* Circles2.fsh */,
+				38415A9A1EB77043007B8C7B /* Lines.fsh */,
 			);
 			name = Shaders;
 			sourceTree = "<group>";
@@ -225,17 +253,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				38B4CE5B1EB5198100E9DEF8 /* LaunchScreen.storyboard in Resources */,
+				387BFDD71EB76125008EB2B6 /* Circles.fsh in Resources */,
 				387BFDB61EB6991D008EB2B6 /* SpinningParticles.fsh in Resources */,
 				38B4CE581EB5198100E9DEF8 /* Assets.xcassets in Resources */,
-				3821CCF21EB6438A003589B6 /* GameScene.sks in Resources */,
+				387BFDC71EB72467008EB2B6 /* BaseVertex.vsh in Resources */,
 				3821CCA61EB54FBE003589B6 /* blob.png in Resources */,
+				387BFDD51EB76049008EB2B6 /* Shapes.fsh in Resources */,
 				387BFDBA1EB69C58008EB2B6 /* Trippy.fsh in Resources */,
+				387BFDCF1EB75DB3008EB2B6 /* EyesTunnel.fsh in Resources */,
+				38415A971EB76B71007B8C7B /* Planet.fsh in Resources */,
 				387BFDB81EB69A54008EB2B6 /* CurvedLine.fsh in Resources */,
-				387BFDBE1EB69FF9008EB2B6 /* WaterColors.fsh in Resources */,
-				3821CCF51EB6453D003589B6 /* ColorfulCircle.fsh in Resources */,
+				387BFDBE1EB69FF9008EB2B6 /* Cube.fsh in Resources */,
+				387BFDC91EB7251B008EB2B6 /* Galaxy.fsh in Resources */,
+				387BFDD11EB75EEC008EB2B6 /* Blobs.fsh in Resources */,
+				3821CCF51EB6453D003589B6 /* CircleWithStars.fsh in Resources */,
+				387BFDCD1EB74E73008EB2B6 /* BlurredLines.fsh in Resources */,
+				38415A991EB76CEA007B8C7B /* Circles2.fsh in Resources */,
+				38415A9B1EB77043007B8C7B /* Lines.fsh in Resources */,
 				387BFDBC1EB69D06008EB2B6 /* SpinningLines.fsh in Resources */,
 				387BFDB41EB6985C008EB2B6 /* ExpandingCircle.fsh in Resources */,
 				38B4CE561EB5198100E9DEF8 /* Main.storyboard in Resources */,
+				387BFDD31EB75FDC008EB2B6 /* Waves.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +288,9 @@
 				3821CC9F1EB52443003589B6 /* TableViewCell.m in Sources */,
 				3821CC921EB51BCC003589B6 /* NavigationController.m in Sources */,
 				38B4CE501EB5198100E9DEF8 /* AppDelegate.m in Sources */,
+				387BFDC51EB71F56008EB2B6 /* BaseShader.m in Sources */,
 				38B4CE4D1EB5198100E9DEF8 /* main.m in Sources */,
 				3821CC951EB51BE0003589B6 /* TableViewController.m in Sources */,
-				3821CCF01EB641E0003589B6 /* GameScene.m in Sources */,
 				3821CC981EB51C04003589B6 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

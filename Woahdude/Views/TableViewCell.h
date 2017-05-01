@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
 
-@interface TableViewCell : UITableViewCell
+@interface TableViewCell : UITableViewCell <GLKViewDelegate>
 
+@property (weak, nonatomic) IBOutlet GLKView *glView;
 @property (weak, nonatomic) IBOutlet UILabel *title;
+@property (strong, nonatomic) CADisplayLink *displayLink;
+
+-(void)setData:(NSString *)data;
 
 @end
