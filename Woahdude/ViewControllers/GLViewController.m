@@ -7,89 +7,76 @@
 //
 
 #import "GLViewController.h"
-#import "Background.h"
+#import "GameScene.h"
+
+@implementation SKScene (Unarchive)
+
++(instancetype)unarchiveFromFile:(NSString *)file
+{
+	NSString *nodePath = [[NSBundle mainBundle] pathForResource:file ofType:@"sks"];
+	
+	NSData *data = [NSData dataWithContentsOfFile:nodePath options:NSDataReadingMappedIfSafe error:nil];
+	
+	NSKeyedUnarchiver *arch = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+	[arch setClass:self forClassName:@"SKScene"];
+	SKScene *scene = [arch decodeObjectForKey:NSKeyedArchiveRootObjectKey];
+	[arch finishDecoding];
+	
+	return scene;
+}
+
+@end
 
 @interface GLViewController ()
 
-@property (strong, nonatomic) EAGLContext *context;
-@property (strong, nonatomic) Background *background;
+@property (strong, nonatomic) GameScene *scene;
 
 @end
 
 @implementation GLViewController
 
-#pragma mark - View lifecycle
-
-- (void)setupGL {
-	
-	[EAGLContext setCurrentContext:self.context];
-	glEnable(GL_CULL_FACE);
-	
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	
-	self.background = [Background new];
-}
-
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
 	
-	self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-	GLKView *glView = (GLKView *)self.view;
-	[glView setContext:self.context];
+	SKView *skView = (SKView *)self.view;
+	skView.showsFPS = YES;
+	skView.showsNodeCount = YES;
 	
-	if (!self.context) {
-		NSLog(@"Failed to create ES context");
-	}
+	self.scene = [GameScene unarchiveFromFile:@"GameScene"];
+	self.scene.scaleMode = SKSceneScaleModeFill;
 	
-	[self setupGL];
-	
-	[self setDelegate:self];
 }
 
--(void)dealloc
+-(void)viewWillAppear:(BOOL)animated
 {
-	[EAGLContext setCurrentContext:nil];
-	self.context = nil;
-	[self.background destroy];
+	[super viewWillAppear:animated];
+	SKView *skView = (SKView *)self.view;
+	self.scene.fileName = self.fileName;
+	[skView presentScene:self.scene];
 }
 
--(void)viewDidLayoutSubviews
+-(void)setRed:(CGFloat)red
 {
-	[super viewDidLayoutSubviews];
-	
-	UIWindow *window = [[UIApplication sharedApplication].windows firstObject];
-	CGRect frame = [window frame];
-	frame = [window convertRect:frame toView:self.view];
-	
-	CGFloat w = frame.size.width;
-	CGFloat h = frame.size.height;
-	CGFloat offset = ((h-w)*0.5)*10/w;
-	self.background.effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(0, 10, 10+offset, -offset, -1, 1);
+	_red = red;
+	[self updateBackground];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+-(void)setGreen:(CGFloat)green
 {
-	// Return YES for supported orientations
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	_green = green;
+	[self updateBackground];
 }
 
-#pragma mark - GLKViewDelegate
-
-- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
+-(void)setBlue:(CGFloat)blue
 {
-	glClearColor(self.red, self.green, self.blue, 1.0);
-	glClear(GL_COLOR_BUFFER_BIT);
-
-	[self.background render];
+	_blue = blue;
+	[self updateBackground];
 }
 
-#pragma mark - GLKViewControllerDelegate
-
--(void)glkViewControllerUpdate:(GLKViewController *)controller
+-(void)updateBackground
 {
-	
+	self.scene.colorUniform.vectorFloat4Value = vector4((float)self.red, (float)self.green, (float)self.blue, 1.f);
 }
 
 @end

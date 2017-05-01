@@ -6,12 +6,14 @@
 //  Copyright © 2017 Tawa Nicolas. All rights reserved.
 //
 
-#import <GLKit/GLKit.h>
+#import <UIKit/UIKit.h>
 
-@interface GLViewController : GLKViewController <GLKViewControllerDelegate>
+@interface GLViewController : UIViewController
 
 @property (assign, nonatomic) CGFloat red;
 @property (assign, nonatomic) CGFloat green;
 @property (assign, nonatomic) CGFloat blue;
+
+@property (strong, nonatomic) NSString *fileName;
 
 @end

@@ -13,6 +13,15 @@
 		3821CC9F1EB52443003589B6 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CC9E1EB52443003589B6 /* TableViewCell.m */; };
 		3821CCA21EB52D35003589B6 /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CCA11EB52D35003589B6 /* GLViewController.m */; };
 		3821CCA61EB54FBE003589B6 /* blob.png in Resources */ = {isa = PBXBuildFile; fileRef = 3821CCA51EB54FBE003589B6 /* blob.png */; };
+		3821CCF01EB641E0003589B6 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CCEF1EB641E0003589B6 /* GameScene.m */; };
+		3821CCF21EB6438A003589B6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3821CCF11EB6438A003589B6 /* GameScene.sks */; };
+		3821CCF51EB6453D003589B6 /* ColorfulCircle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3821CCF41EB6453D003589B6 /* ColorfulCircle.fsh */; };
+		387BFDB41EB6985C008EB2B6 /* ExpandingCircle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDB31EB6985C008EB2B6 /* ExpandingCircle.fsh */; };
+		387BFDB61EB6991D008EB2B6 /* SpinningParticles.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDB51EB6991D008EB2B6 /* SpinningParticles.fsh */; };
+		387BFDB81EB69A54008EB2B6 /* CurvedLine.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDB71EB69A54008EB2B6 /* CurvedLine.fsh */; };
+		387BFDBA1EB69C58008EB2B6 /* Trippy.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDB91EB69C58008EB2B6 /* Trippy.fsh */; };
+		387BFDBC1EB69D06008EB2B6 /* SpinningLines.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDBB1EB69D06008EB2B6 /* SpinningLines.fsh */; };
+		387BFDBE1EB69FF9008EB2B6 /* WaterColors.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 387BFDBD1EB69FF9008EB2B6 /* WaterColors.fsh */; };
 		38B4CE4D1EB5198100E9DEF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CE4C1EB5198100E9DEF8 /* main.m */; };
 		38B4CE501EB5198100E9DEF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CE4F1EB5198100E9DEF8 /* AppDelegate.m */; };
 		38B4CE561EB5198100E9DEF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CE541EB5198100E9DEF8 /* Main.storyboard */; };
@@ -33,6 +42,16 @@
 		3821CCA11EB52D35003589B6 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLViewController.m; path = ViewControllers/GLViewController.m; sourceTree = "<group>"; };
 		3821CCA41EB5330D003589B6 /* Background.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Background.h; path = Elements/Background.h; sourceTree = "<group>"; };
 		3821CCA51EB54FBE003589B6 /* blob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blob.png; sourceTree = "<group>"; };
+		3821CCEE1EB641E0003589B6 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Views/GameScene.h; sourceTree = "<group>"; };
+		3821CCEF1EB641E0003589B6 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = Views/GameScene.m; sourceTree = "<group>"; };
+		3821CCF11EB6438A003589B6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = Views/GameScene.sks; sourceTree = "<group>"; };
+		3821CCF41EB6453D003589B6 /* ColorfulCircle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ColorfulCircle.fsh; path = Shaders/ColorfulCircle.fsh; sourceTree = "<group>"; };
+		387BFDB31EB6985C008EB2B6 /* ExpandingCircle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ExpandingCircle.fsh; path = Shaders/ExpandingCircle.fsh; sourceTree = "<group>"; };
+		387BFDB51EB6991D008EB2B6 /* SpinningParticles.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SpinningParticles.fsh; path = Shaders/SpinningParticles.fsh; sourceTree = "<group>"; };
+		387BFDB71EB69A54008EB2B6 /* CurvedLine.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = CurvedLine.fsh; path = Shaders/CurvedLine.fsh; sourceTree = "<group>"; };
+		387BFDB91EB69C58008EB2B6 /* Trippy.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Trippy.fsh; path = Shaders/Trippy.fsh; sourceTree = "<group>"; };
+		387BFDBB1EB69D06008EB2B6 /* SpinningLines.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SpinningLines.fsh; path = Shaders/SpinningLines.fsh; sourceTree = "<group>"; };
+		387BFDBD1EB69FF9008EB2B6 /* WaterColors.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = WaterColors.fsh; path = Shaders/WaterColors.fsh; sourceTree = "<group>"; };
 		38B4CE481EB5198100E9DEF8 /* Woahdude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woahdude.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B4CE4C1EB5198100E9DEF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38B4CE4E1EB5198100E9DEF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +78,9 @@
 			children = (
 				3821CC9D1EB52443003589B6 /* TableViewCell.h */,
 				3821CC9E1EB52443003589B6 /* TableViewCell.m */,
+				3821CCEE1EB641E0003589B6 /* GameScene.h */,
+				3821CCEF1EB641E0003589B6 /* GameScene.m */,
+				3821CCF11EB6438A003589B6 /* GameScene.sks */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -69,6 +91,20 @@
 				3821CCA41EB5330D003589B6 /* Background.h */,
 			);
 			name = Elements;
+			sourceTree = "<group>";
+		};
+		3821CCF31EB64529003589B6 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3821CCF41EB6453D003589B6 /* ColorfulCircle.fsh */,
+				387BFDB71EB69A54008EB2B6 /* CurvedLine.fsh */,
+				387BFDB31EB6985C008EB2B6 /* ExpandingCircle.fsh */,
+				387BFDBB1EB69D06008EB2B6 /* SpinningLines.fsh */,
+				387BFDB51EB6991D008EB2B6 /* SpinningParticles.fsh */,
+				387BFDB91EB69C58008EB2B6 /* Trippy.fsh */,
+				387BFDBD1EB69FF9008EB2B6 /* WaterColors.fsh */,
+			);
+			name = Shaders;
 			sourceTree = "<group>";
 		};
 		38B4CE3F1EB5198100E9DEF8 = {
@@ -93,6 +129,7 @@
 				38B4CE4E1EB5198100E9DEF8 /* AppDelegate.h */,
 				38B4CE4F1EB5198100E9DEF8 /* AppDelegate.m */,
 				3821CCA51EB54FBE003589B6 /* blob.png */,
+				3821CCF31EB64529003589B6 /* Shaders */,
 				3821CCA31EB532EE003589B6 /* Elements */,
 				3821CC9C1EB52432003589B6 /* Views */,
 				38C964BD1EB51B59006A09ED /* ViewControllers */,
@@ -188,8 +225,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				38B4CE5B1EB5198100E9DEF8 /* LaunchScreen.storyboard in Resources */,
+				387BFDB61EB6991D008EB2B6 /* SpinningParticles.fsh in Resources */,
 				38B4CE581EB5198100E9DEF8 /* Assets.xcassets in Resources */,
+				3821CCF21EB6438A003589B6 /* GameScene.sks in Resources */,
 				3821CCA61EB54FBE003589B6 /* blob.png in Resources */,
+				387BFDBA1EB69C58008EB2B6 /* Trippy.fsh in Resources */,
+				387BFDB81EB69A54008EB2B6 /* CurvedLine.fsh in Resources */,
+				387BFDBE1EB69FF9008EB2B6 /* WaterColors.fsh in Resources */,
+				3821CCF51EB6453D003589B6 /* ColorfulCircle.fsh in Resources */,
+				387BFDBC1EB69D06008EB2B6 /* SpinningLines.fsh in Resources */,
+				387BFDB41EB6985C008EB2B6 /* ExpandingCircle.fsh in Resources */,
 				38B4CE561EB5198100E9DEF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +252,7 @@
 				38B4CE501EB5198100E9DEF8 /* AppDelegate.m in Sources */,
 				38B4CE4D1EB5198100E9DEF8 /* main.m in Sources */,
 				3821CC951EB51BE0003589B6 /* TableViewController.m in Sources */,
+				3821CCF01EB641E0003589B6 /* GameScene.m in Sources */,
 				3821CC981EB51C04003589B6 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,8 +378,9 @@
 				DEVELOPMENT_TEAM = DWW2N9PN49;
 				INFOPLIST_FILE = Woahdude/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tawanicolas.woahdude.Woahdude;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tawanicolas.woahdude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -344,8 +391,9 @@
 				DEVELOPMENT_TEAM = DWW2N9PN49;
 				INFOPLIST_FILE = Woahdude/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tawanicolas.woahdude.Woahdude;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tawanicolas.woahdude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

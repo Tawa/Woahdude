@@ -23,6 +23,7 @@
 	[super viewDidLoad];
 	
 	self.glViewController = [[self childViewControllers] firstObject];
+	self.glViewController.fileName = self.fileName;
 	
 	self.glViewController.red = self.redSlider.value;
 	self.glViewController.green = self.greenSlider.value;
