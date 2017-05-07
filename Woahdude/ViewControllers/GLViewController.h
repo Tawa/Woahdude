@@ -17,4 +17,6 @@
 
 @property (strong, nonatomic) NSString *fileName;
 
+-(void)setScale:(float)scale;
+
 @end

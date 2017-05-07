@@ -25,6 +25,7 @@
 	[super viewDidLoad];
 	
 	GLKView *glView = (GLKView *)self.view;
+	glView.contentScaleFactor = 1;
 	glView.context = [BaseShader context];
 	
 	glClearColor(0, 0, 0, 1);
@@ -78,14 +79,11 @@
 -(void)handleTouch:(UITouch *)touch
 {
 	CGPoint point = [touch locationInView:self.view];
-//	CGFloat mouseX = -4*(point.x-self.view.frame.size.width*0.5);
-//	CGFloat mouseY = 4*(point.y-self.view.frame.size.height*0.5);
 	
 	CGFloat mouseX = point.x/[UIScreen mainScreen].bounds.size.width;
 	CGFloat mouseY = 1-point.y/[UIScreen mainScreen].bounds.size.height;
 	
 	[self.shader x:mouseX y:mouseY];
-//	[self.shader x:point.x y:point.y];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -97,4 +95,14 @@
 {
 	[self handleTouch:[touches anyObject]];
 }
+
+-(void)setScale:(float)scale
+{
+	GLKView *view = (GLKView *)self.view;
+	
+	view.contentScaleFactor = scale;
+	
+	[self.shader s:scale];
+}
+
 @end

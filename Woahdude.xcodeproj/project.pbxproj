@@ -12,8 +12,8 @@
 		3821CC981EB51C04003589B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CC971EB51C04003589B6 /* ViewController.m */; };
 		3821CC9F1EB52443003589B6 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CC9E1EB52443003589B6 /* TableViewCell.m */; };
 		3821CCA21EB52D35003589B6 /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CCA11EB52D35003589B6 /* GLViewController.m */; };
-		3821CCA61EB54FBE003589B6 /* blob.png in Resources */ = {isa = PBXBuildFile; fileRef = 3821CCA51EB54FBE003589B6 /* blob.png */; };
 		3821CCF51EB6453D003589B6 /* CircleWithStars.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3821CCF41EB6453D003589B6 /* CircleWithStars.fsh */; };
+		383441C71EBE8750006C7F4A /* Colorful.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 383441C61EBE8750006C7F4A /* Colorful.fsh */; };
 		38415A971EB76B71007B8C7B /* Planet.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38415A961EB76B71007B8C7B /* Planet.fsh */; };
 		38415A991EB76CEA007B8C7B /* Circles2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38415A981EB76CEA007B8C7B /* Circles2.fsh */; };
 		38415A9B1EB77043007B8C7B /* Lines.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38415A9A1EB77043007B8C7B /* Lines.fsh */; };
@@ -37,6 +37,21 @@
 		38B4CE561EB5198100E9DEF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CE541EB5198100E9DEF8 /* Main.storyboard */; };
 		38B4CE581EB5198100E9DEF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CE571EB5198100E9DEF8 /* Assets.xcassets */; };
 		38B4CE5B1EB5198100E9DEF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CE591EB5198100E9DEF8 /* LaunchScreen.storyboard */; };
+		38D3E5071EBF09E40092C15C /* Donuts.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38D3E5061EBF09E40092C15C /* Donuts.fsh */; };
+		38D3E5091EBF0AA40092C15C /* LineTunnel.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38D3E5081EBF0AA40092C15C /* LineTunnel.fsh */; };
+		38D3E50B1EBF0B8D0092C15C /* Turbine.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38D3E50A1EBF0B8D0092C15C /* Turbine.fsh */; };
+		38D3E50D1EBF0C430092C15C /* Star.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38D3E50C1EBF0C430092C15C /* Star.fsh */; };
+		38D3E50F1EBF0DA60092C15C /* Bottle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38D3E50E1EBF0DA60092C15C /* Bottle.fsh */; };
+		38D3E5111EBF102B0092C15C /* Star2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38D3E5101EBF102B0092C15C /* Star2.fsh */; };
+		38D3E5131EBF11530092C15C /* Rotating Pluses.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 38D3E5121EBF11530092C15C /* Rotating Pluses.fsh */; };
+		38D3E52B1EBF1BC20092C15C /* CYRLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3E5231EBF1BC20092C15C /* CYRLayoutManager.m */; };
+		38D3E52C1EBF1BC20092C15C /* CYRTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3E5251EBF1BC20092C15C /* CYRTextStorage.m */; };
+		38D3E52D1EBF1BC20092C15C /* CYRTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3E5271EBF1BC20092C15C /* CYRTextView.m */; };
+		38D3E52E1EBF1BC20092C15C /* CYRToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3E52A1EBF1BC20092C15C /* CYRToken.m */; };
+		38D3E5331EBF205D0092C15C /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3E5321EBF205D0092C15C /* EditorViewController.m */; };
+		38D3E5361EBF20B10092C15C /* QEDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3E5351EBF20B10092C15C /* QEDTextView.m */; };
+		38D3E53A1EBF259C0092C15C /* NSObject+PSIObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3E5391EBF259C0092C15C /* NSObject+PSIObject.m */; };
+		38D3E53E1EBF2B8C0092C15C /* Shaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3E53D1EBF2B8C0092C15C /* Shaders.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +65,8 @@
 		3821CC9E1EB52443003589B6 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = Views/TableViewCell.m; sourceTree = "<group>"; };
 		3821CCA01EB52D35003589B6 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLViewController.h; path = ViewControllers/GLViewController.h; sourceTree = "<group>"; };
 		3821CCA11EB52D35003589B6 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLViewController.m; path = ViewControllers/GLViewController.m; sourceTree = "<group>"; };
-		3821CCA51EB54FBE003589B6 /* blob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blob.png; sourceTree = "<group>"; };
 		3821CCF41EB6453D003589B6 /* CircleWithStars.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = CircleWithStars.fsh; path = Shaders/CircleWithStars.fsh; sourceTree = "<group>"; };
+		383441C61EBE8750006C7F4A /* Colorful.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Colorful.fsh; path = Shaders/Colorful.fsh; sourceTree = "<group>"; };
 		38415A961EB76B71007B8C7B /* Planet.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Planet.fsh; path = Shaders/Planet.fsh; sourceTree = "<group>"; };
 		38415A981EB76CEA007B8C7B /* Circles2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Circles2.fsh; path = Shaders/Circles2.fsh; sourceTree = "<group>"; };
 		38415A9A1EB77043007B8C7B /* Lines.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Lines.fsh; path = Shaders/Lines.fsh; sourceTree = "<group>"; };
@@ -79,6 +94,30 @@
 		38B4CE571EB5198100E9DEF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38B4CE5A1EB5198100E9DEF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38B4CE5C1EB5198100E9DEF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38D3E5061EBF09E40092C15C /* Donuts.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Donuts.fsh; path = Shaders/Donuts.fsh; sourceTree = "<group>"; };
+		38D3E5081EBF0AA40092C15C /* LineTunnel.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = LineTunnel.fsh; path = Shaders/LineTunnel.fsh; sourceTree = "<group>"; };
+		38D3E50A1EBF0B8D0092C15C /* Turbine.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Turbine.fsh; path = Shaders/Turbine.fsh; sourceTree = "<group>"; };
+		38D3E50C1EBF0C430092C15C /* Star.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Star.fsh; path = Shaders/Star.fsh; sourceTree = "<group>"; };
+		38D3E50E1EBF0DA60092C15C /* Bottle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Bottle.fsh; path = Shaders/Bottle.fsh; sourceTree = "<group>"; };
+		38D3E5101EBF102B0092C15C /* Star2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Star2.fsh; path = Shaders/Star2.fsh; sourceTree = "<group>"; };
+		38D3E5121EBF11530092C15C /* Rotating Pluses.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = "Rotating Pluses.fsh"; path = "Shaders/Rotating Pluses.fsh"; sourceTree = "<group>"; };
+		38D3E5221EBF1BC20092C15C /* CYRLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYRLayoutManager.h; path = CYRTextViewKit/CYRLayoutManager.h; sourceTree = "<group>"; };
+		38D3E5231EBF1BC20092C15C /* CYRLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYRLayoutManager.m; path = CYRTextViewKit/CYRLayoutManager.m; sourceTree = "<group>"; };
+		38D3E5241EBF1BC20092C15C /* CYRTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYRTextStorage.h; path = CYRTextViewKit/CYRTextStorage.h; sourceTree = "<group>"; };
+		38D3E5251EBF1BC20092C15C /* CYRTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYRTextStorage.m; path = CYRTextViewKit/CYRTextStorage.m; sourceTree = "<group>"; };
+		38D3E5261EBF1BC20092C15C /* CYRTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYRTextView.h; path = CYRTextViewKit/CYRTextView.h; sourceTree = "<group>"; };
+		38D3E5271EBF1BC20092C15C /* CYRTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYRTextView.m; path = CYRTextViewKit/CYRTextView.m; sourceTree = "<group>"; };
+		38D3E5281EBF1BC20092C15C /* CYRTextViewKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYRTextViewKit.h; path = CYRTextViewKit/CYRTextViewKit.h; sourceTree = "<group>"; };
+		38D3E5291EBF1BC20092C15C /* CYRToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYRToken.h; path = CYRTextViewKit/CYRToken.h; sourceTree = "<group>"; };
+		38D3E52A1EBF1BC20092C15C /* CYRToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYRToken.m; path = CYRTextViewKit/CYRToken.m; sourceTree = "<group>"; };
+		38D3E5311EBF205D0092C15C /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditorViewController.h; path = ViewControllers/EditorViewController.h; sourceTree = "<group>"; };
+		38D3E5321EBF205D0092C15C /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditorViewController.m; path = ViewControllers/EditorViewController.m; sourceTree = "<group>"; };
+		38D3E5341EBF20B10092C15C /* QEDTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QEDTextView.h; path = Views/QEDTextView.h; sourceTree = "<group>"; };
+		38D3E5351EBF20B10092C15C /* QEDTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QEDTextView.m; path = Views/QEDTextView.m; sourceTree = "<group>"; };
+		38D3E5381EBF259C0092C15C /* NSObject+PSIObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+PSIObject.h"; path = "Categories/NSObject+PSIObject.h"; sourceTree = "<group>"; };
+		38D3E5391EBF259C0092C15C /* NSObject+PSIObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PSIObject.m"; path = "Categories/NSObject+PSIObject.m"; sourceTree = "<group>"; };
+		38D3E53C1EBF2B8C0092C15C /* Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shaders.h; path = Data/Shaders.h; sourceTree = "<group>"; };
+		38D3E53D1EBF2B8C0092C15C /* Shaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shaders.m; path = Data/Shaders.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +134,8 @@
 		3821CC9C1EB52432003589B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				38D3E5341EBF20B10092C15C /* QEDTextView.h */,
+				38D3E5351EBF20B10092C15C /* QEDTextView.m */,
 				3821CC9D1EB52443003589B6 /* TableViewCell.h */,
 				3821CC9E1EB52443003589B6 /* TableViewCell.m */,
 			);
@@ -116,21 +157,29 @@
 				387BFDC61EB72467008EB2B6 /* BaseVertex.vsh */,
 				387BFDD01EB75EEC008EB2B6 /* Blobs.fsh */,
 				387BFDCC1EB74E73008EB2B6 /* BlurredLines.fsh */,
+				38D3E50E1EBF0DA60092C15C /* Bottle.fsh */,
+				387BFDD61EB76125008EB2B6 /* Circles.fsh */,
+				38415A981EB76CEA007B8C7B /* Circles2.fsh */,
 				3821CCF41EB6453D003589B6 /* CircleWithStars.fsh */,
+				383441C61EBE8750006C7F4A /* Colorful.fsh */,
 				387BFDBD1EB69FF9008EB2B6 /* Cube.fsh */,
 				387BFDB71EB69A54008EB2B6 /* CurvedLine.fsh */,
+				38D3E5061EBF09E40092C15C /* Donuts.fsh */,
 				387BFDB31EB6985C008EB2B6 /* ExpandingCircle.fsh */,
 				387BFDCE1EB75DB3008EB2B6 /* EyesTunnel.fsh */,
 				387BFDC81EB7251B008EB2B6 /* Galaxy.fsh */,
+				38415A9A1EB77043007B8C7B /* Lines.fsh */,
+				38D3E5081EBF0AA40092C15C /* LineTunnel.fsh */,
+				38415A961EB76B71007B8C7B /* Planet.fsh */,
+				38D3E5121EBF11530092C15C /* Rotating Pluses.fsh */,
+				387BFDD41EB76049008EB2B6 /* Shapes.fsh */,
 				387BFDBB1EB69D06008EB2B6 /* SpinningLines.fsh */,
 				387BFDB51EB6991D008EB2B6 /* SpinningParticles.fsh */,
+				38D3E50C1EBF0C430092C15C /* Star.fsh */,
+				38D3E5101EBF102B0092C15C /* Star2.fsh */,
 				387BFDB91EB69C58008EB2B6 /* Trippy.fsh */,
+				38D3E50A1EBF0B8D0092C15C /* Turbine.fsh */,
 				387BFDD21EB75FDC008EB2B6 /* Waves.fsh */,
-				387BFDD41EB76049008EB2B6 /* Shapes.fsh */,
-				387BFDD61EB76125008EB2B6 /* Circles.fsh */,
-				38415A961EB76B71007B8C7B /* Planet.fsh */,
-				38415A981EB76CEA007B8C7B /* Circles2.fsh */,
-				38415A9A1EB77043007B8C7B /* Lines.fsh */,
 			);
 			name = Shaders;
 			sourceTree = "<group>";
@@ -156,7 +205,9 @@
 			children = (
 				38B4CE4E1EB5198100E9DEF8 /* AppDelegate.h */,
 				38B4CE4F1EB5198100E9DEF8 /* AppDelegate.m */,
-				3821CCA51EB54FBE003589B6 /* blob.png */,
+				38D3E53B1EBF25DF0092C15C /* Data */,
+				38D3E5371EBF258C0092C15C /* Categories */,
+				38D3E5141EBF1B910092C15C /* CRYTextViewKit */,
 				3821CCF31EB64529003589B6 /* Shaders */,
 				3821CCA31EB532EE003589B6 /* Elements */,
 				3821CC9C1EB52432003589B6 /* Views */,
@@ -189,8 +240,44 @@
 				3821CCA11EB52D35003589B6 /* GLViewController.m */,
 				3821CC961EB51C04003589B6 /* ViewController.h */,
 				3821CC971EB51C04003589B6 /* ViewController.m */,
+				38D3E5311EBF205D0092C15C /* EditorViewController.h */,
+				38D3E5321EBF205D0092C15C /* EditorViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		38D3E5141EBF1B910092C15C /* CRYTextViewKit */ = {
+			isa = PBXGroup;
+			children = (
+				38D3E5221EBF1BC20092C15C /* CYRLayoutManager.h */,
+				38D3E5231EBF1BC20092C15C /* CYRLayoutManager.m */,
+				38D3E5241EBF1BC20092C15C /* CYRTextStorage.h */,
+				38D3E5251EBF1BC20092C15C /* CYRTextStorage.m */,
+				38D3E5261EBF1BC20092C15C /* CYRTextView.h */,
+				38D3E5271EBF1BC20092C15C /* CYRTextView.m */,
+				38D3E5281EBF1BC20092C15C /* CYRTextViewKit.h */,
+				38D3E5291EBF1BC20092C15C /* CYRToken.h */,
+				38D3E52A1EBF1BC20092C15C /* CYRToken.m */,
+			);
+			name = CRYTextViewKit;
+			sourceTree = "<group>";
+		};
+		38D3E5371EBF258C0092C15C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				38D3E5381EBF259C0092C15C /* NSObject+PSIObject.h */,
+				38D3E5391EBF259C0092C15C /* NSObject+PSIObject.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		38D3E53B1EBF25DF0092C15C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				38D3E53C1EBF2B8C0092C15C /* Shaders.h */,
+				38D3E53D1EBF2B8C0092C15C /* Shaders.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,26 +339,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D3E5091EBF0AA40092C15C /* LineTunnel.fsh in Resources */,
 				38B4CE5B1EB5198100E9DEF8 /* LaunchScreen.storyboard in Resources */,
 				387BFDD71EB76125008EB2B6 /* Circles.fsh in Resources */,
 				387BFDB61EB6991D008EB2B6 /* SpinningParticles.fsh in Resources */,
+				38D3E5131EBF11530092C15C /* Rotating Pluses.fsh in Resources */,
+				383441C71EBE8750006C7F4A /* Colorful.fsh in Resources */,
 				38B4CE581EB5198100E9DEF8 /* Assets.xcassets in Resources */,
 				387BFDC71EB72467008EB2B6 /* BaseVertex.vsh in Resources */,
-				3821CCA61EB54FBE003589B6 /* blob.png in Resources */,
 				387BFDD51EB76049008EB2B6 /* Shapes.fsh in Resources */,
 				387BFDBA1EB69C58008EB2B6 /* Trippy.fsh in Resources */,
 				387BFDCF1EB75DB3008EB2B6 /* EyesTunnel.fsh in Resources */,
 				38415A971EB76B71007B8C7B /* Planet.fsh in Resources */,
 				387BFDB81EB69A54008EB2B6 /* CurvedLine.fsh in Resources */,
 				387BFDBE1EB69FF9008EB2B6 /* Cube.fsh in Resources */,
+				38D3E50D1EBF0C430092C15C /* Star.fsh in Resources */,
 				387BFDC91EB7251B008EB2B6 /* Galaxy.fsh in Resources */,
+				38D3E5071EBF09E40092C15C /* Donuts.fsh in Resources */,
 				387BFDD11EB75EEC008EB2B6 /* Blobs.fsh in Resources */,
 				3821CCF51EB6453D003589B6 /* CircleWithStars.fsh in Resources */,
 				387BFDCD1EB74E73008EB2B6 /* BlurredLines.fsh in Resources */,
 				38415A991EB76CEA007B8C7B /* Circles2.fsh in Resources */,
 				38415A9B1EB77043007B8C7B /* Lines.fsh in Resources */,
 				387BFDBC1EB69D06008EB2B6 /* SpinningLines.fsh in Resources */,
+				38D3E5111EBF102B0092C15C /* Star2.fsh in Resources */,
+				38D3E50F1EBF0DA60092C15C /* Bottle.fsh in Resources */,
 				387BFDB41EB6985C008EB2B6 /* ExpandingCircle.fsh in Resources */,
+				38D3E50B1EBF0B8D0092C15C /* Turbine.fsh in Resources */,
 				38B4CE561EB5198100E9DEF8 /* Main.storyboard in Resources */,
 				387BFDD31EB75FDC008EB2B6 /* Waves.fsh in Resources */,
 			);
@@ -284,13 +378,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D3E5361EBF20B10092C15C /* QEDTextView.m in Sources */,
+				38D3E5331EBF205D0092C15C /* EditorViewController.m in Sources */,
+				38D3E52E1EBF1BC20092C15C /* CYRToken.m in Sources */,
 				3821CCA21EB52D35003589B6 /* GLViewController.m in Sources */,
+				38D3E52C1EBF1BC20092C15C /* CYRTextStorage.m in Sources */,
 				3821CC9F1EB52443003589B6 /* TableViewCell.m in Sources */,
 				3821CC921EB51BCC003589B6 /* NavigationController.m in Sources */,
 				38B4CE501EB5198100E9DEF8 /* AppDelegate.m in Sources */,
+				38D3E52D1EBF1BC20092C15C /* CYRTextView.m in Sources */,
 				387BFDC51EB71F56008EB2B6 /* BaseShader.m in Sources */,
 				38B4CE4D1EB5198100E9DEF8 /* main.m in Sources */,
+				38D3E52B1EBF1BC20092C15C /* CYRLayoutManager.m in Sources */,
+				38D3E53A1EBF259C0092C15C /* NSObject+PSIObject.m in Sources */,
 				3821CC951EB51BE0003589B6 /* TableViewController.m in Sources */,
+				38D3E53E1EBF2B8C0092C15C /* Shaders.m in Sources */,
 				3821CC981EB51C04003589B6 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

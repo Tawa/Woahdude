@@ -62,12 +62,8 @@
 
 -(void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
-	glClearColor(0, 0.5, 1, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
-	
 	[self.shader renderInRect:rect atTime:time];
-	
-	glFlush();
 }
 
 @end

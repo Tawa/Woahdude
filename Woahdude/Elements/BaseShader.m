@@ -33,6 +33,10 @@ static GLfloat const BaseShaderQuad[8] = {
 @property (assign, nonatomic, readonly) GLuint uTime;
 @property (assign, nonatomic, readonly) GLuint uColor;
 @property (assign, nonatomic, readonly) GLuint uMouse;
+@property (assign, nonatomic, readonly) GLuint uBackbuffer;
+
+// Texture
+@property (assign, nonatomic, readonly) GLuint texture;
 
 @end
 
@@ -54,6 +58,13 @@ static GLfloat const BaseShaderQuad[8] = {
 		_uTime = glGetUniformLocation(_program, "time");
 		_uColor = glGetUniformLocation(_program, "color");
 		_uMouse = glGetUniformLocation(_program, "mouse");
+		_uBackbuffer = glGetUniformLocation(_program, "backbuffer");
+
+//		glGenTextures(1, &_texture);
+//		
+//		glActiveTexture(GL_TEXTURE0);
+//		glBindTexture(GL_TEXTURE_2D, _texture);
+//		glUniform1i(_uBackbuffer, _texture);
 		
 		r = 0.5f;
 		g = 0.5f;
@@ -62,13 +73,18 @@ static GLfloat const BaseShaderQuad[8] = {
 		x = 0.5f;
 		y = 0.5f;
 		
-		s = [UIScreen mainScreen].scale;
+		[self s:1];
 		
 		// Configure OpenGL ES
 		[self configureOpenGLES];
 	}
 	
 	return self;
+}
+
+-(void)dealloc
+{
+//	glDeleteTextures(1, &_texture);
 }
 
 -(void)r:(float)red g:(float)green b:(float)blue
@@ -82,6 +98,11 @@ static GLfloat const BaseShaderQuad[8] = {
 {
 	x = mouseX;
 	y = mouseY;
+}
+
+-(void)s:(float)scale
+{
+	s = scale;
 }
 
 #pragma mark - Render
@@ -151,6 +172,9 @@ static GLfloat const BaseShaderQuad[8] = {
 	
 	// Create the shader source
 	const GLchar *source = (GLchar *)[[NSString stringWithContentsOfFile:file encoding:NSUTF8StringEncoding error:nil] UTF8String];
+	if (source == NULL) {
+		return 0;
+	}
 	
 	// Create the shader object
 	GLuint shaderHandle = glCreateShader(type);

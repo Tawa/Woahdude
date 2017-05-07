@@ -4,6 +4,7 @@ precision highp float;
 
 uniform float time;
 uniform vec2 mouse;
+uniform lowp vec4 color;
 uniform vec2 resolution;
 #define iResolution resolution
 #define iMouse (mouse * resolution)
@@ -183,6 +184,6 @@ void main( void ) {
 	vec2 position = ( gl_FragCoord.xy  ) ;
 	vec4 c = vec4(0.0);
 	mainImage(c, position);
-	gl_FragColor = c;
+	gl_FragColor = c*color;
 	
 }

@@ -16,6 +16,7 @@
 
 -(void)r:(float)r g:(float)g b:(float)b;
 -(void)x:(float)x y:(float)y;
+-(void)s:(float)s;
 
 +(EAGLContext *)context;
 

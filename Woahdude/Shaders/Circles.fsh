@@ -3,6 +3,7 @@ precision mediump float;
 #endif
 
 uniform float time;
+uniform lowp vec4 color;
 uniform vec2 mouse;
 uniform vec2 resolution;
 
@@ -33,5 +34,5 @@ void main()
 		float dy = float(i / 2) - .5;
 		c += circle(position * 500.0, vec2(dx, dy));
 	}
-	gl_FragColor = vec4(vec3(min(1.0, c)), 1);
+	gl_FragColor = vec4(vec3(min(1.0, c)) * color.rgb, 1);
 }

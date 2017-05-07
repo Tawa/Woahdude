@@ -19,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *timeScaleSegment;
 
 @property (strong, nonatomic) NSString *fileName;
+@property (assign, nonatomic) BOOL isNew;
 
 @end
