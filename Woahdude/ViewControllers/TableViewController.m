@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "EditorViewController.h"
 #import "Shaders.h"
+#import "UIViewController+AlertViewController.h"
 
 @interface TableViewController ()
 {
@@ -32,6 +33,13 @@
 	for (TableViewCell *cell in self.tableView.visibleCells) {
 		[cell.displayLink setPaused:pause];
 	}
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	
+	[self.tableView reloadData];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -75,7 +83,7 @@
 	}
 	fileName = [[url lastPathComponent] stringByDeletingPathExtension];
 
-	[cell setData:fileName];
+	[cell setData:fileName custom:indexPath.section == 0];
     return cell;
 }
 
@@ -126,18 +134,30 @@
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	[[Shaders sharedInstance].shaders removeObjectAtIndex:indexPath.row];
-	[Shaders save];
-	[tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+	NSString *fileName = [[Shaders sharedInstance].shaders objectAtIndex:indexPath.row];
+
+	NSString *docDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+	NSString *path = [[docDir stringByAppendingPathComponent:fileName] stringByAppendingPathExtension:@"fsh"];
+	NSError *error = nil;
+	[[NSFileManager sharedInstance] removeItemAtPath:path error:&error];
+	
+	if (error) {
+		[self showError:error];
+	} else {
+		[[Shaders sharedInstance].shaders removeObjectAtIndex:indexPath.row];
+		[Shaders save];
+		[tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+	}
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(TableViewCell *)sender
 {
+	NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
 	if ([[segue identifier] isEqualToString:@"createNewShader"]) {
 		EditorViewController *target = [segue destinationViewController];
+		target.isCustom = indexPath.section == 0;
 		target.isNew = YES;
 	} else {
-		NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
 		ViewController *target = [segue destinationViewController];
 		
 		if (indexPath.section == 1) {
@@ -145,11 +165,13 @@
 			NSString *fileName = [[url lastPathComponent] stringByDeletingPathExtension];
 			
 			target.fileName = fileName;
+			target.isCustom = NO;
 		} else {
 			NSString *fileName = [[Shaders sharedInstance].shaders objectAtIndex:indexPath.row];
 			target.isNew = YES;
 
 			target.fileName = fileName;
+			target.isCustom = YES;
 		}
 	}
 }

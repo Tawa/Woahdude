@@ -41,12 +41,16 @@ static GLfloat const BaseShaderQuad[8] = {
 @end
 
 @implementation BaseShader
+{
+	BOOL custom;
+}
 
--(instancetype)initWithVertexShader:(NSString *)vsh fragmentShader:(NSString *)fsh
+-(instancetype)initWithVertexShader:(NSString *)vsh fragmentShader:(NSString *)fsh custom:(BOOL)c
 {
 	self = [super init];
 	
 	if (self) {
+		custom = c;
 		// Program
 		_program = [self programWithVertexShader:vsh fragmentShader:fsh];
 		
@@ -80,6 +84,11 @@ static GLfloat const BaseShaderQuad[8] = {
 	}
 	
 	return self;
+}
+
+-(instancetype)initWithVertexShader:(NSString *)vsh fragmentShader:(NSString *)fsh
+{
+	return [self initWithVertexShader:vsh fragmentShader:fsh custom:NO];
 }
 
 -(void)dealloc
@@ -167,7 +176,12 @@ static GLfloat const BaseShaderQuad[8] = {
 	if (type == GL_VERTEX_SHADER) {
 		file = [[NSBundle mainBundle] pathForResource:name ofType:@"vsh"];
 	} else if (type == GL_FRAGMENT_SHADER){
-		file = [[NSBundle mainBundle] pathForResource:name ofType:@"fsh"];
+		if (custom) {
+			NSString *docDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+			file = [[docDir stringByAppendingPathComponent:name] stringByAppendingPathExtension:@"fsh"];
+		} else {
+			file = [[NSBundle mainBundle] pathForResource:name ofType:@"fsh"];
+		}
 	}
 	
 	// Create the shader source

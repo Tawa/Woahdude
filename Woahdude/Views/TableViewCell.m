@@ -50,12 +50,12 @@
 	
 }
 
--(void)setData:(NSString *)data
+-(void)setData:(NSString *)data custom:(BOOL)custom
 {
 	context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
 	[_glView setContext:context];
 	[EAGLContext setCurrentContext:context];
-	self.shader = [[BaseShader alloc] initWithVertexShader:@"BaseVertex" fragmentShader:data];
+	self.shader = [[BaseShader alloc] initWithVertexShader:@"BaseVertex" fragmentShader:data custom:custom];
 	self.title.text = data;
 	[_glView display];
 }

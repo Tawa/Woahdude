@@ -16,6 +16,7 @@
 @property (assign, nonatomic) CGFloat timeScale;
 
 @property (strong, nonatomic) NSString *fileName;
+@property (assign, nonatomic) BOOL isCustom;
 
 -(void)setScale:(float)scale;
 

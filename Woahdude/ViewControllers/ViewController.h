@@ -20,5 +20,6 @@
 
 @property (strong, nonatomic) NSString *fileName;
 @property (assign, nonatomic) BOOL isNew;
+@property (assign, nonatomic) BOOL isCustom;
 
 @end

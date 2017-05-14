@@ -34,6 +34,7 @@
 	
 	self.glViewController = [[self childViewControllers] firstObject];
 	self.glViewController.fileName = self.fileName;
+	self.glViewController.isCustom = self.isCustom;
 	
 	self.navigationItem.title = self.fileName;
 	
@@ -144,6 +145,7 @@
 {
 	EditorViewController *editor = [segue destinationViewController];
 	editor.fileName = self.fileName;
+	editor.isCustom = self.isCustom;
 	if ([[segue identifier] isEqualToString:@"editSegue"]) {
 	} else if ([[segue identifier] isEqualToString:@"forkSegue"]) {
 		editor.isFork = YES;

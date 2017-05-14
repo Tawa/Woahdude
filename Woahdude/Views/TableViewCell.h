@@ -15,6 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (strong, nonatomic) CADisplayLink *displayLink;
 
--(void)setData:(NSString *)data;
+-(void)setData:(NSString *)data custom:(BOOL)custom;
 
 @end

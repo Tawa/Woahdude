@@ -10,6 +10,7 @@
 
 @interface EditorViewController : UIViewController
 
+@property (assign, nonatomic) BOOL isCustom;
 @property (assign, nonatomic) NSString *fileName;
 
 @property (assign, nonatomic) BOOL isNew;

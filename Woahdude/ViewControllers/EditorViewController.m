@@ -58,7 +58,12 @@
 
 	if (!self.isNew) {
 		NSString *path = [[NSBundle mainBundle] pathForResource:self.fileName ofType:@"fsh"];
-		
+
+		if (self.isCustom) {
+			NSString *docDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+			path = [[docDir stringByAppendingPathComponent:self.fileName] stringByAppendingPathExtension:@"fsh"];
+		}
+
 		NSError *error;
 		NSString *content = [NSString stringWithContentsOfFile:path encoding:kCFStringEncodingUTF8 error:&error];
 		
@@ -134,12 +139,12 @@
 
 -(void)saveAction:(id)sender
 {
-	NSString *newFileName = [self.fileName stringByAppendingString:@".fsh"];
+	NSString *newFileName = self.fileName;
 	NSString *docDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
 	NSString *dirName = [docDir stringByAppendingPathComponent:newFileName];
 	
 	NSError *error;
-	[self.textView.text writeToFile:dirName atomically:YES encoding:NSASCIIStringEncoding error:&error];
+	[self.textView.text writeToFile:[dirName stringByAppendingPathExtension:@"fsh"] atomically:YES encoding:NSASCIIStringEncoding error:&error];
 	
 	if (error) {
 		NSLog(@"Error = %@", [error localizedDescription]);
@@ -147,6 +152,9 @@
 		if (self.isNew || self.isFork) {
 			[[[Shaders sharedInstance] shaders] addObject:newFileName];
 			[Shaders save];
+			[self.navigationController popToRootViewControllerAnimated:YES];
+		} else {
+			[self.navigationController popViewControllerAnimated:YES];
 		}
 	}
 }

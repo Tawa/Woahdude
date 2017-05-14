@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380B6CC91EC867A500302DAC /* UIViewController+AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380B6CC81EC867A500302DAC /* UIViewController+AlertViewController.m */; };
 		3821CC921EB51BCC003589B6 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CC911EB51BCC003589B6 /* NavigationController.m */; };
 		3821CC951EB51BE0003589B6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CC941EB51BE0003589B6 /* TableViewController.m */; };
 		3821CC981EB51C04003589B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3821CC971EB51C04003589B6 /* ViewController.m */; };
@@ -55,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380B6CC71EC867A500302DAC /* UIViewController+AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AlertViewController.h"; path = "Categories/UIViewController+AlertViewController.h"; sourceTree = "<group>"; };
+		380B6CC81EC867A500302DAC /* UIViewController+AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AlertViewController.m"; path = "Categories/UIViewController+AlertViewController.m"; sourceTree = "<group>"; };
 		3821CC901EB51BCB003589B6 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationController.h; path = ViewControllers/NavigationController.h; sourceTree = "<group>"; };
 		3821CC911EB51BCC003589B6 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationController.m; path = ViewControllers/NavigationController.m; sourceTree = "<group>"; };
 		3821CC931EB51BE0003589B6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ViewControllers/TableViewController.h; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 			children = (
 				38D3E5381EBF259C0092C15C /* NSObject+PSIObject.h */,
 				38D3E5391EBF259C0092C15C /* NSObject+PSIObject.m */,
+				380B6CC71EC867A500302DAC /* UIViewController+AlertViewController.h */,
+				380B6CC81EC867A500302DAC /* UIViewController+AlertViewController.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 				38B4CE501EB5198100E9DEF8 /* AppDelegate.m in Sources */,
 				38D3E52D1EBF1BC20092C15C /* CYRTextView.m in Sources */,
 				387BFDC51EB71F56008EB2B6 /* BaseShader.m in Sources */,
+				380B6CC91EC867A500302DAC /* UIViewController+AlertViewController.m in Sources */,
 				38B4CE4D1EB5198100E9DEF8 /* main.m in Sources */,
 				38D3E52B1EBF1BC20092C15C /* CYRLayoutManager.m in Sources */,
 				38D3E53A1EBF259C0092C15C /* NSObject+PSIObject.m in Sources */,

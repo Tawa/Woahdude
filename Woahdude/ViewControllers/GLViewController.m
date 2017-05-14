@@ -39,7 +39,7 @@
 {
 	[super viewWillAppear:animated];
 	
-	self.shader = [[BaseShader alloc] initWithVertexShader:@"BaseVertex" fragmentShader:self.fileName];
+	self.shader = [[BaseShader alloc] initWithVertexShader:@"BaseVertex" fragmentShader:self.fileName custom:self.isCustom];
 }
 
 -(void)glkView:(GLKView *)view drawInRect:(CGRect)rect

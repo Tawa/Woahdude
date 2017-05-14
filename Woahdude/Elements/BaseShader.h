@@ -11,6 +11,7 @@
 
 @interface BaseShader : NSObject
 
+-(instancetype)initWithVertexShader:(NSString *)vsh fragmentShader:(NSString *)fsh custom:(BOOL)custom;
 -(instancetype)initWithVertexShader:(NSString *)vsh fragmentShader:(NSString *)fsh;
 -(void)renderInRect:(CGRect)rect atTime:(NSTimeInterval)time;
 
